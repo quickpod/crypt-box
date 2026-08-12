@@ -1,2 +1,5 @@
 # CryptBox runtime deps — permissive/weak-copyleft only, no AGPL/proprietary.
 cryptography>=41
+# Aura design system (vendored cryptbox/aura.py) — CustomTkinter theme layer.
+customtkinter>=5.2
+darkdetect>=0.8

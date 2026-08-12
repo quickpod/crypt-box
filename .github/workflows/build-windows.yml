@@ -20,8 +20,10 @@ jobs:
           pyinstaller --onefile --windowed --name CryptBox
           --icon crypt-box.ico
           --version-file packaging/version.txt
+          --hidden-import cryptbox.__main__
           --add-data "crypt-box.ico;."
           --collect-all cryptography
+          --collect-all customtkinter
           crypt_box_app.py
       - name: Stage installer inputs
         shell: pwsh
@@ -41,4 +43,10 @@ jobs:
           path: |
             dist/CryptBox.exe
             packaging/dist/CryptBox-Setup.exe
+          if-no-files-found: error
+      - name: Upload staging (for signed repack)
+        uses: actions/upload-artifact@v4
+        with:
+          name: crypt-box-staging
+          path: packaging/staging
           if-no-files-found: error
