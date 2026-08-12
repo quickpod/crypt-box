@@ -1,0 +1,13 @@
+{
+  "slug": "crypt-box",
+  "name": "CryptBox",
+  "tagline": "Encrypt files & folders with AES-256, self-decrypting archives and secure shred.",
+  "categorySlug": "encryption-tools",
+  "license": "Apache-2.0",
+  "description": "Encrypt and decrypt files and whole folders with AES-256-GCM and a passphrase (scrypt key derivation), create self-describing encrypted archives, and securely shred originals. Simple drag-in workflow with a clear security model. SecureVault's lightweight sibling \u2014 nothing is uploaded.",
+  "aiStack": "Python (tkinter + CLI), cryptography",
+  "platforms": [
+    "windows"
+  ],
+  "buildEntry": "crypt_box_app.py"
+}
