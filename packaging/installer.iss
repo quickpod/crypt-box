@@ -1,6 +1,6 @@
 ; Inno Setup — CryptBox. Signed single-file installer, compiled in CI.
 #define AppName "CryptBox"
-#define AppVersion "1.0.3"
+#define AppVersion "1.0.4"
 
 [Setup]
 AppMutex=QuickOpen.CryptBox
@@ -24,7 +24,7 @@ WizardSmallImageFile=branding\wizard-small.bmp
 AppCopyright=Apache-2.0. 100%% AI-built, published on QuickOpen (quickopen.ai).
 VersionInfoCompany=QuickOpen
 VersionInfoProductName=CryptBox
-VersionInfoVersion=1.0.3.0
+VersionInfoVersion=1.0.4.0
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
 ArchitecturesInstallIn64BitMode=x64compatible
