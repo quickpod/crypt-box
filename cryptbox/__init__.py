@@ -23,7 +23,7 @@ from .folder import encrypt_folder, decrypt_folder
 from .shred import secure_delete
 from .selfextract import make_self_decrypting
 
-__version__ = "1.0.0"
+__version__ = "1.0.6"
 
 __all__ = [
     "CryptBoxError",
